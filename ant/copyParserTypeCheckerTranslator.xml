@@ -8,9 +8,9 @@
 
     <import file="${basedir}/ant/build-common.xml" as="common"/>
 
-    <property name="parser.jar" location="${basedir}/../TSPHP-parser/build/lib"/>
-    <property name="type-checker.jar" location="${basedir}/../TSPHP-type-checker/build/lib"/>
-    <property name="translator.jar" location="${basedir}/../TSPHP-translators-php54/build/lib"/>
+    <property name="parser.jar" location="${basedir}/../tsphp-parser/build/lib"/>
+    <property name="type-checker.jar" location="${basedir}/../tsphp-type-checker/build/lib"/>
+    <property name="translator.jar" location="${basedir}/../tsphp-translators-php54/build/lib"/>
 
     <target name="translator" depends="" description="copy the translator jar to the lib folder">
         <copyComponent dir="${translator.jar}" includes="TSPHP-translators-*.jar"/>

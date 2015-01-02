@@ -32,6 +32,7 @@ public class CompilerTest extends ACompilerTest
             Assert.fail("No compiler exception thrown. It should not be allowed to add compilation units "
                     + "during compilation.");
         } catch (CompilerException ex) {
+            //we expect an exception
         }
     }
 
@@ -44,6 +45,7 @@ public class CompilerTest extends ACompilerTest
             compiler.reset();
             Assert.fail("No compiler exception thrown. It should not be allowed to reset during compilation.");
         } catch (CompilerException ex) {
+            //we expect an exception
         }
     }
 
@@ -97,6 +99,7 @@ public class CompilerTest extends ACompilerTest
             Assert.fail("No compiler exception thrown. It should not be allowed to test whether errors were found"
                     + " during compilation.");
         } catch (CompilerException ex) {
+            //we expect an exception
         }
     }
 
@@ -109,6 +112,7 @@ public class CompilerTest extends ACompilerTest
             compiler.compile();
             Assert.fail("No compiler exception thrown. It should not be allowed to compile during compilation.");
         } catch (CompilerException ex) {
+            //we expect an exception
         }
     }
 
