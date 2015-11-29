@@ -1,10 +1,24 @@
-build/*
+### project specific
+
+### IDE specific ignores
 nbproject/*
+# intellij
 .idea/*
 out/*
 *.iml
-antlr/output/*
+/atlassian-ide-plugin.xml
+# eclipse
+.settings/
+.classpath
+.project
+/bin/
+
+### building stuff
+build/*
 /lib/dev/checkstyle/cfg/checkstyle.properties
 /lib/dev/pmd/cfg/pmd_tsphp.xml
 /lib/dev/QA.html
-/atlassian-ide-plugin.xml
+
+### antlr 
+antlr/output/*
+/src/**/antlr/*
