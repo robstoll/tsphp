@@ -14,6 +14,7 @@ out/*
 /bin/
 
 ### building stuff
+.gradle/*
 build/*
 /lib/dev/checkstyle/cfg/checkstyle.properties
 /lib/dev/pmd/cfg/pmd_tsphp.xml
