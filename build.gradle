@@ -1,9 +1,15 @@
+plugins {
+    id "com.github.kt3k.coveralls" version "2.5.0"
+}
+
 repositories {
     mavenCentral()
 }
-  configurations {
+
+configurations {
     junitAnt
 }
+
 dependencies {
     junitAnt('org.apache.ant:ant-junit:1.9.2') {
         transitive = false
@@ -12,6 +18,7 @@ dependencies {
         transitive = false
     }
 }
+
 ant.taskdef(
     name: 'junit', 
     classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
@@ -23,3 +30,8 @@ ant.taskdef(
     classpath: configurations.junitAnt.asPath
 )
 ant.importBuild 'build.xml'
+
+coveralls{
+    sourceDirs = ["${rootDir}/src/"]
+    jacocoReportPath = "${buildDir}/coverage/coverage.xml"
+}
