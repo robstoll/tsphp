@@ -1,9 +1,12 @@
 # Type-Safe PHP: A compile time approach
 
+[![Build Status](https://travis-ci.org/robstoll/tsphp.svg?branch=master)](https://travis-ci.org/robstoll/tsphp)
+[![Coverage Status](https://coveralls.io/repos/github/robstoll/tsphp/badge.svg?branch=master)](https://coveralls.io/github/robstoll/tsphp?branch=master)
+
 This project aims to provide you a type-safe variant of PHP, namely TSPHP.
 
 A transcompiler is built which [parses](https://github.com/tsphp/tsphp-parser "Parser component") your tsphp code, [type checks](https://github.com/tsphp/tsphp-typechecker "type checker component") it to ensure type safety and finally [translates](https://github.com/tsphp/tsphp-translators-php54 "translator component") it to PHP.
-You can find the latest [demo application](http://tsphp.ch/jenkins/job/TSPHP_dev/lastSuccessfulBuild/) on the build server.
+You can find the latest [demo application](http://tsphp.ch/jenkins/job/TSPHP_dev/lastSuccessfulBuild/) on the build server or [try out TSPHP directly in your browser](http://tsphp.ch/demo).
 
 Please visit the [project's website](http://tsphp.ch/) for more information on the project.
 Use the project's [issue tracking system](http://tsphp.ch/jira) (JIRA) to report bugs or submit feature requests.
